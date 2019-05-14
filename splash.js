@@ -1,3 +1,8 @@
+$(window).bind("load", function() {
+  setCarouselButtonHeight()
+  window.onresize = windowResized
+});
+
 function setCarouselButtonHeight(){
   const itemHeight = document.getElementsByClassName("carousel-item")[0].children[0].clientHeight
   const buttons = document.getElementsByClassName("carousel-button")
@@ -9,8 +14,3 @@ function setCarouselButtonHeight(){
 function windowResized() {
   setCarouselButtonHeight()
 }
-
-document.addEventListener("DOMContentLoaded", function() {
-  setCarouselButtonHeight()
-});
-window.onresize = windowResized
