@@ -10,5 +10,7 @@ function windowResized() {
   setCarouselButtonHeight()
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  setCarouselButtonHeight()
+});
 window.onresize = windowResized
-setCarouselButtonHeight()
