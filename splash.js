@@ -1,6 +1,9 @@
 $(window).on("pageshow", function() {
   setCarouselButtonHeight()
   window.onresize = windowResized
+  setTimeout(function() {
+    setCarouselButtonHeight()
+  }, 1000)
 });
 
 function setCarouselButtonHeight(){
