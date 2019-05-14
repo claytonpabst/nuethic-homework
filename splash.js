@@ -1,4 +1,4 @@
-$(window).bind("load", function() {
+$(window).on("pageshow", function() {
   setCarouselButtonHeight()
   window.onresize = windowResized
 });
